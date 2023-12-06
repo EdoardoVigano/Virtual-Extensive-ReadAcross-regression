@@ -12,8 +12,8 @@ import Fish_Alerts_index as FAI
 from rdkit import Chem
 from rdkit.Chem import AllChem
 from rdkit.Chem import Draw
-from rdkit.Chem.Draw import IPythonConsole
-IPythonConsole.ipython_useSVG=True 
+# from rdkit.Chem.Draw import IPythonConsole
+# IPythonConsole.ipython_useSVG=True 
 from rdkit.Chem.Draw import SimilarityMaps
 from rdkit.Chem import rdMolDescriptors
 from rdkit.Chem.Draw import rdMolDraw2D

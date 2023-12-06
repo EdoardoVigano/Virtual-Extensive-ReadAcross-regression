@@ -1,6 +1,6 @@
 # rdkit packages
-from rdkit.Chem.Draw import IPythonConsole
-IPythonConsole.ipython_useSVG=True 
+# from rdkit.Chem.Draw import IPythonConsole
+# IPythonConsole.ipython_useSVG=True 
 
 # Data Analisys library
 import pandas as pd
@@ -61,7 +61,7 @@ def load_input():
         df = pd.read_excel(path)
 
         # Display the loaded data or perform further processing
-        print("CSV file loaded successfully. Here are the first few rows:")
+        print("xlsx file loaded successfully. Here are the first few rows:")
         print(df.head())
         return df
     else:
@@ -101,11 +101,8 @@ if __name__ == "__main__":
     pdf = get_user_choice()
 
     # AcuteTox
-    Dataset_path = 'Data_Training_ReadAcross\FishAcuteTox.xlsx'
+    Dataset_path = os.path.join(os.getcwd(), 'Data_Training_ReadAcross', 'FishAcuteTox.xlsx')
     Dataset = pd.read_excel(Dataset_path, index_col='Unnamed: 0')
-
-    
-
     path_program = os.getcwd()
     path_program = os.path.join(path_program, 'CustomFeaturesCLI')
     path_program = os.path.join(path_program, 'CustomFeaturesCLI.jar')

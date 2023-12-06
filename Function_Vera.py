@@ -8,13 +8,13 @@ import numpy as np
 from rdkit import Chem
 from rdkit.Chem import Descriptors 
 from rdkit.Chem import Draw
-from rdkit.Chem.Draw import IPythonConsole
+# from rdkit.Chem.Draw import IPythonConsole
 from rdkit.Chem import rdFMCS
 from rdkit.Chem.Draw import rdDepictor
 from rdkit.Chem.Scaffolds import MurckoScaffold as MS
 
 rdDepictor.SetPreferCoordGen(True)
-IPythonConsole.drawOptions.minFontSize=20
+# IPythonConsole.drawOptions.minFontSize=20
 
 import descriptor_calculator as dc
 import Function_for_descriptor_tuple as Fdt
