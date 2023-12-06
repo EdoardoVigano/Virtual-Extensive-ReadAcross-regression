@@ -229,13 +229,13 @@ if __name__ == "__main__":
         new2['pred_type'] = ['Global' if i == 'no data' else i for i in new2['pred_type']]
         new2['pred_type'] = ['Global' if round(row['Best Pred'], 3) == round(row['GBPred'], 3) else row['pred_type'] for _, row in new2.iterrows()] 
         
-        # new2.loc[:, ['SMILES', 'Best Pred', 'Reliability']].to_excel(path)
-        new2.to_excel(path)
+        new2.loc[:, ['SMILES', 'Best Pred', 'Reliability']].to_excel(path)
+        # new2.to_excel(path)
     
     if pdf=="yes":
         print("start pdf generation...")
         pdf_generator = Output(Dataset, df_input, Tox, new2)
         pdf_generator.makepdf(lst)
-        # new2.loc[:, ['SMILES', 'Best Pred', 'Reliability']].to_excel(path)
-        new2.to_excel(path)
+        new2.loc[:, ['SMILES', 'Best Pred', 'Reliability']].to_excel(path)
+        # new2.to_excel(path)
         print("Done: you can find the results in result folder.")
