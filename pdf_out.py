@@ -29,7 +29,6 @@ from sklearn.metrics import mean_squared_error
 import os
 import shutil
 
-
 # library useful for output
 from fpdf import FPDF
 import matplotlib.pyplot as plt
@@ -42,7 +41,6 @@ from matplotlib.colors import ColorConverter
 # personal library and functions
 from Function_Vera import*
 import Function_descriptor_idx as FDT_indx # bond e atoms for images
-
 
 class Output:
     def __init__(self, Dataset, df_input, Tox, new2): # new2 output del passaggio prima del codice su notebook   
