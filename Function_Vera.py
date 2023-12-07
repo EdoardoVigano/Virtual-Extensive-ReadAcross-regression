@@ -1803,7 +1803,7 @@ def DataCuration(Dataset: pd.DataFrame):
             number_molecule = number_molecule + 1
             input_line = input_line.strip()
             columns = input_line
-            import standardiser
+            # import standardiser
             mol = Chem.MolFromSmiles(columns, sanitize=True)
             from molvs import tautomer
             function_canonicaliser = tautomer.TautomerCanonicalizer(max_tautomers=MAX_TAUTOMERS)
@@ -1854,7 +1854,7 @@ def DataCurationTarget(Dataset: pd.DataFrame):
             number_molecule = number_molecule + 1
             input_line = input_line.strip()
             columns = input_line
-            import standardiser
+            # import standardiser
             mol = Chem.MolFromSmiles(columns, sanitize=True)
             from molvs import tautomer
             function_canonicaliser = tautomer.TautomerCanonicalizer(max_tautomers=MAX_TAUTOMERS)
