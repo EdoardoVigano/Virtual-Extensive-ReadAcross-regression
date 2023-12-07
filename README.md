@@ -15,7 +15,7 @@ How to use:
 
 2. clone repository on your device 
 
-3. run VERA algorithm
+3. run VERA algorithm  
   from terminal go inside virtual-extensive-readacross folder and run this command:   
   
   python Vera_main_regression.py   
